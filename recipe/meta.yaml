@@ -1,5 +1,5 @@
 {% set name = "ctaplot" %}
-{% set version = "0.6.2" %}
+{% set version = "0.6.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ctaplot-{{ version }}.tar.gz
-  sha256: 907a734af1c535148f3efde24bf56ba28ffee7e9ba7f4c171b38ed8396b81c21
+  sha256: 1c0693106a9c47768a598e60697b64446c8409adf87a06f99368def94dcf3394
 
 build:
   entry_points:
