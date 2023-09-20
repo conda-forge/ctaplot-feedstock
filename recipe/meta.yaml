@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.6
     - numpy >1.16
-    - matplotlib-base >=2.0
+    - matplotlib-base >=3.6
     - scipy >=0.19
     - astropy
     - pytables
