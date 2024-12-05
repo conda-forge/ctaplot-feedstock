@@ -14,7 +14,7 @@ build:
     - gammaboard = ctaplot.gammaboard:open_dashboard
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -25,7 +25,7 @@ requirements:
     - numpy >1.16
     - matplotlib-base >=3.6
     - scipy >=0.19
-    - astropy
+    - astropy-base
     - pytables
     - pandas
     - scikit-learn
