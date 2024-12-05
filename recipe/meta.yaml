@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ctaplot-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ctaplot-{{ version }}.tar.gz
   sha256: 8d4671f96e39626e5a494d6e16c6814f6685065bf9b6f6b286c1ef6b375add5f
 
 build:
@@ -14,18 +14,19 @@ build:
     - gammaboard = ctaplot.gammaboard:open_dashboard
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6
+    - python 3.6
     - pip
+    - setuptools
   run:
     - python >=3.6
     - numpy >1.16
     - matplotlib-base >=3.6
     - scipy >=0.19
-    - astropy
+    - astropy-base
     - pytables
     - pandas
     - scikit-learn
