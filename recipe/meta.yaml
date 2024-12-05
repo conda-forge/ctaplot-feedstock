@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ctaplot-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ctaplot-{{ version }}.tar.gz
   sha256: 8d4671f96e39626e5a494d6e16c6814f6685065bf9b6f6b286c1ef6b375add5f
 
 build:
@@ -18,7 +18,7 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python 3.6
     - pip
     - setuptools
   run:
