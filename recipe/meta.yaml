@@ -1,5 +1,5 @@
 {% set name = "ctaplot" %}
-{% set version = "0.6.4" %}
+{% set version = "0.6.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ctaplot-{{ version }}.tar.gz
-  sha256: 8d4671f96e39626e5a494d6e16c6814f6685065bf9b6f6b286c1ef6b375add5f
+  sha256: 319cf5334ceeee0666cc52c13f1267571a9af83c13caf1be895fcdc725147c95
 
 build:
   entry_points:
     - gammaboard = ctaplot.gammaboard:open_dashboard
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
